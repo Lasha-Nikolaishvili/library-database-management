@@ -67,6 +67,7 @@ def main():
     print(f"Average number of pages: {get_avg_page_number(cursor)}")
     book_name, page_number = get_biggest_book(cursor)
     print(f"Biggest book is '{book_name}' with {page_number} pages.")
+    conn.close()
 
 
 if __name__ == '__main__':
